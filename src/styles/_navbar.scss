@@ -1,0 +1,113 @@
+.nav-container {
+    background-image: linear-gradient( to bottom, rgba(0, 0, 0,0.6), rgba(236, 236, 236,0) 20%) , url(../images/image-hero-desktop.jpg );
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 30vmax;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 2.5rem .5rem;
+    width: 85%;
+    margin: 0 auto;
+    color: white;
+}
+
+
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: baseline;
+    z-index: 2;
+}
+.logo > h1 {
+    font-size: $font-h1;
+}
+
+.hamburger {
+    display: none;
+}
+
+
+.nav-list {
+    display: flex;
+    padding: 0 1rem;
+    list-style-type: none;
+    max-width: 100%;
+    
+}
+
+.nav-list li {
+    padding: .6rem;
+}
+
+@media (max-width: 375px){
+    .nav-container {
+        background-image: linear-gradient( to bottom, rgba(0, 0, 0,0.6), rgba(236, 236, 236,0) 20%) , url(../images/image-hero-mobile.jpg );
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 35vmax;
+    }
+    nav {
+        padding: 1.5rem .5rem;
+        width: 90%;
+    }
+
+    .hamburger {
+        background-image: url(../images/icon-hamburger.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 1.3em;
+        height: 1.3em;
+        display: block;
+        
+    }
+
+    .hamburger-close {
+        background-image: url(../images/icon-close-menu.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 1.3em;
+        height: 1.3em;
+        display: block;
+    }
+
+    .nav-headers{
+        background-image: linear-gradient( to bottom, rgba(0, 0, 0,0.6), rgba(236, 236, 236,0)) ;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        padding: 0 1.1rem;
+        z-index: 1;
+        display: none;
+    }
+
+    .nav-list{
+       width: 100%;
+       flex-direction: column;
+       position: relative;
+       top: 5rem;
+       padding: 0;
+       background: white;
+       border-radius: 7px;
+       color: $neutralColor1;
+    }
+
+    .nav-list li {
+        padding: 1.5rem;
+        font-weight: $font-500;
+    }
+
+    .nav-list li:nth-child(2) {
+        border-top: 1px solid hsla(0, 0%, 48%, 0.3);
+        border-bottom: 1px solid hsla(0, 0%, 48%, 0.3);
+    }
+}

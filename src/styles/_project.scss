@@ -1,0 +1,51 @@
+.projects-container {
+    padding: 0 2rem;
+}
+
+.project {
+    padding: 1.5rem 2rem;
+    box-shadow: 0 0 0 1px hsla(0, 0%, 48%,0.3);
+    border-radius: 6px;
+    margin: 1.5rem 0;
+    background: white;
+}
+
+.project-header , .project-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project-header > h4 {
+    margin: .5rem 0;
+    font-size: $font-h4;
+}
+
+.project-header span {
+    color: $primaryColor;
+    font-weight: $font-500;
+    font-size: $font-h4;
+}
+
+.project-text {
+    margin: 1.5rem 0;
+    color: $neutralColor2;
+    font-size: $font-p;
+    line-height: 1.7;
+}
+
+.project-footer > div {
+    display: inline-flex;
+    align-items: center;
+}
+
+.project-footer > div> h1 {
+    margin-bottom: .5rem;
+    margin-right: .5rem;
+    font-size: $font-h1;
+}
+
+.project-footer > div > small {
+    color: $neutralColor2;
+}
